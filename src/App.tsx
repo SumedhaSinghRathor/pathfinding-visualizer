@@ -1,9 +1,12 @@
 import { PathfindingProvider } from "./context/PathfindingContext";
+import { TileProvider } from "./context/TileContext";
 
 function App() {
   return (
     <PathfindingProvider>
-      <h1 className="text-3xl font-bold underline">Hello World!</h1>
+      <TileProvider>
+        <h1 className="text-3xl font-bold underline">Hello World!</h1>
+      </TileProvider>
     </PathfindingProvider>
   );
 }
